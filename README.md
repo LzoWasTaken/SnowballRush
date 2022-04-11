@@ -1,2 +1,3 @@
 # SnowballRush
-Move with the arrow keys. Dodge the rocks to prevent your lives from being taken away and catch the snowballs to prevent yourself from melting.
+Snowball Rush is a game where the player (a snowman) must catch snowballs to prevent
+themselves from melting, while avoiding rocks that take away their lives.

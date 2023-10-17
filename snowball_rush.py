@@ -1,5 +1,5 @@
 """
-Purpose: snowball_rush.py is a game where the player (a snowman) must catch snowballs to prevent
+Purpose: snowball_rush.py is a game where the player (a snowperson) must catch snowballs to prevent
 themselves from melting, while avoiding rocks that take away their lives.
 
 Author: Lzo 
@@ -25,12 +25,12 @@ background_music = pygame.mixer.music.load("background_music.mp3")
 
 # Define classes
 class Player(pygame.sprite.Sprite):
-    """A class to represent the player, a snowman"""
+    """A class to represent the player, a snowperson"""
     def __init__(self):
         """Initializes the player"""
         super().__init__()
         # Set image 
-        self.image = pygame.image.load("snowman.png")
+        self.image = pygame.image.load("snowperson.png")
         self.rect = self.image.get_rect()
         self.rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT - 32)
 
@@ -169,7 +169,7 @@ class Game:
 
         if pygame.sprite.spritecollide(self.player, self.snowball_group, True):
             self.player.snowball_collision_sound.play()
-            self.player.temp = -500
+            self.player.temp = -273.15
 
         if pygame.sprite.spritecollide(self.player, self.rock_group, True):
             self.player.rock_collision_sound.play()
